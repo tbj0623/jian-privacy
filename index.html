@@ -6,6 +6,10 @@
 <title>笺 隐私政策</title>
 <meta name="description" content="笺（com.jian.app）不收集、不上传、不出售任何个人信息。你记录的一切只存在你自己的设备里。" />
 <link rel="canonical" href="https://tbj0623.github.io/jian-privacy/" />
+<!-- 不给 favicon 就等于让浏览器自己去要 /favicon.ico：公开页的控制台上挂一条 404
+     很难看，而 `test/privacy_page.playwright.py` 会把它量成一条失败。空 data: URI
+     既掐掉那次请求，也不引入任何外部资源（那条门同时盯着这个）。 -->
+<link rel="icon" href="data:," />
 <!--
   这份文件就是发布到 GitHub Pages 的那一页；仓库里的这一份是它的**源**。
   它和 docs/上架/商店材料.md 第 4 节由 test/store_claims.py 两头对：
